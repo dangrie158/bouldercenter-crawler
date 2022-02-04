@@ -60,7 +60,7 @@ def crawl_webclimber(site_config:SiteConfig)->CrawlResult:
         total_slots = 100
         free_slots = 100 - bar_width
     else:
-        total_slots = (free_slots // bar_width) * 100
+        total_slots = (free_slots // (100 - bar_width)) * 100
     active_slots = total_slots - free_slots
 
     return {"free":free_slots, "active": active_slots}
