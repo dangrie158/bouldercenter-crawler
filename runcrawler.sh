@@ -2,4 +2,4 @@
 
 DIR=$( dirname "$0" )
 cd "${DIR}"
-python3.7 "${DIR}"/crawl.py
+python3.10 "${DIR}"/crawl.py
